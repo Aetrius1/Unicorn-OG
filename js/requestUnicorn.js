@@ -93,7 +93,7 @@ exports.handler = (event, context, callback) => {
 // For simplicity, we'll just pick a unicorn at random.
 function findUnicorn(pickupLocation) {
 	console.log('Finding unicorn for ', pickupLocation.Latitude, ', ', pickupLocation.Longitude);
-	return fleet[Math.floor(Math.random() * fleet.length)];
+	return fleet[0 * fleet.length)];
 }
 
 function recordRide(rideId, username, unicorn) {
